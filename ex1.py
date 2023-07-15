@@ -3,7 +3,7 @@ import numpy
 import matplotlib.pyplot as plt
 from matplotlib import colors
 
-img = cv2.imread("img/p4.png", cv2.IMREAD_COLOR)
+img = cv2.imread("img/s1.jpeg", cv2.IMREAD_COLOR)
 
 hsv_img = cv2.cvtColor(img, cv2.COLOR_RGB2HSV)
 

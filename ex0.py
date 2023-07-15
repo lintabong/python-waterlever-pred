@@ -39,3 +39,5 @@
 #     file.write("\n")
 
 #     file.close
+import numpy
+print(numpy.mean([148, 136, 126]))

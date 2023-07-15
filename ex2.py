@@ -4,12 +4,12 @@ import cv2
 
 pytesseract.pytesseract.tesseract_cmd = "c:\\Program Files (x86)\\Tesseract-OCR\\tesseract.exe"
 
-BGR = cv2.imread("img/p1.png")
+BGR = cv2.imread("img/s1.jpeg")
 RGB = cv2.cvtColor(BGR, cv2.COLOR_BGR2RGB)
 
 hsv_img = cv2.cvtColor(RGB, cv2.COLOR_RGB2HSV)
 
-mask  = cv2.inRange(hsv_img, (0, 0, 200), (145, 60, 255))
+mask  = cv2.inRange(hsv_img, (0, 0, 200), (145, 160, 255))
 img   = cv2.bitwise_and(RGB, RGB, mask=mask)
 
 img   = cv2.threshold(img, 0, 255, cv2.THRESH_BINARY_INV)[1]

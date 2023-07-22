@@ -75,8 +75,6 @@ thickness = 2
 value = round(maxHeight-(count/(h-y))*30,2)
 image = cv2.putText(img, str(value), org, font, fontScale, color, thickness, cv2.LINE_AA)
 
-
-
 cv2.imshow("image", img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()

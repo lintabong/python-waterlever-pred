@@ -9,6 +9,7 @@ from helper import config
 
 ctypes.windll.shcore.SetProcessDpiAwareness(1)
 
+cam = 0
 
 class CamFrame(tkinter.Frame):
     def __init__(self, container):
@@ -62,7 +63,7 @@ class CamFrame(tkinter.Frame):
         self.streaming_video()
 
     def connect_camera(self):
-        self.cam = cv2.VideoCapture(0)
+        self.cam = cv2.VideoCapture(cam)
 
     def streaming_video(self):
         _, image = self.cam.read()

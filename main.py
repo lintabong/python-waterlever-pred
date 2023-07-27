@@ -23,23 +23,22 @@ class CamFrame(tkinter.Frame):
         self.config(width=w, height=h, background="#5C6592")
         self.place(x=10, y=10)
 
-        tkinter.Label(self, bg="#5C6592", text="x1").place(x=w-200, y=10)
-        tkinter.Label(self, bg="#5C6592", text="y1").place(x=w-200, y=50)
-        tkinter.Label(self, bg="#5C6592", text="x2").place(x=w-200, y=90)
-        tkinter.Label(self, bg="#5C6592", text="y2").place(x=w-200, y=130)
+        tkinter.Label(self, bg="#5C6592", fg="#ffffff", text="x1").place(x=w-200, y=10)
+        tkinter.Label(self, bg="#5C6592", fg="#ffffff", text="y1").place(x=w-200, y=50)
+        tkinter.Label(self, bg="#5C6592", fg="#ffffff", text="x2").place(x=w-200, y=90)
+        tkinter.Label(self, bg="#5C6592", fg="#ffffff", text="y2").place(x=w-200, y=130)
+        tkinter.Label(self, bg="#5C6592", fg="#ffffff", text="result").place(x=w-220, y=330)
 
-        self.x = tkinter.Entry(self, width=15)
-        self.y = tkinter.Entry(self, width=15)
-        self.h = tkinter.Entry(self, width=15)
-        self.w = tkinter.Entry(self, width=15)
-
-        self.value = tkinter.Entry(self, width=15)
+        self.x = tkinter.Entry(self, width=17)
+        self.y = tkinter.Entry(self, width=17)
+        self.h = tkinter.Entry(self, width=17)
+        self.w = tkinter.Entry(self, width=17)
+        self.value = tkinter.Entry(self, width=17)
 
         self.x.place(x=w-170, y=10)
         self.y.place(x=w-170, y=50)
         self.w.place(x=w-170, y=90)
         self.h.place(x=w-170, y=130)
-
         self.value.place(x=w-170, y=330)
 
         tkinter.Button(
@@ -109,7 +108,6 @@ class CamFrame(tkinter.Frame):
         config.write(configuration)
 
     def process(self, img, x, y, w, h):
-
         hsv   = cv2.cvtColor(img, cv2.COLOR_RGB2HSV)
         mask1 = cv2.inRange(hsv, (0, 10, 120), (150, 240, 255))
 

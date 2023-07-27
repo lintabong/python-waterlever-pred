@@ -1,5 +1,24 @@
+# GUI DETEKSI KETINGGIAN MENGGUNAKAN CANNY EDGE
+GUI menggunakan modul tkinter dan dijalankan pada windows
 
-1. install python 3.8
-2. create virtual environtment
-3. install all dependencies by using pip install -r etc/requirements.txt
-4. install tesseract from https://sourceforge.net/projects/tesseract-ocr-alt/files/tesseract-ocr-setup-3.02.02.exe/download
+<br>
+
+## Software yang dibutuhkan
+* [python >= 3.8](https://www.python.org/downloads/)
+
+<br>
+
+## Penggunaan di Windows
+1. Mengaktifkan virtuan environtment
+2. Menginstall dependency yang dibutuhkan
+```
+pip install -r etc/requirements.txt
+```
+3. Percobaan pertama bisa digunakan `test.py`
+```
+python test.py
+```
+4. Jalankan `main.py` untuk membuka GUI 
+```
+python main.py
+```

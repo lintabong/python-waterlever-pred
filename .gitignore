@@ -1,2 +1,12 @@
 .venv
 .vscode
+__pycache__
+
+config.json
+
+try0.py
+try1.py
+try2.py
+try3.py
+try4.py
+try5.py

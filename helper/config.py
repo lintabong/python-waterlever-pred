@@ -3,8 +3,14 @@ import json
 
 if not os.path.exists("config.json"):
     result = {
-        "width": 1230,
-        "height": 800,
+        "width": 900,
+        "height": 500,
+        "rectangle": {
+            "x":10,
+            "y":10,
+            "w":80,
+            "h":240
+        }
     }
             
     with open("config.json", "w") as outfile:

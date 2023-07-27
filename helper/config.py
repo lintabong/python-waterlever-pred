@@ -6,10 +6,17 @@ if not os.path.exists("config.json"):
         "width": 900,
         "height": 500,
         "rectangle": {
-            "x":10,
-            "y":10,
-            "w":80,
-            "h":240
+            "x": 10,
+            "y": 10,
+            "w": 80,
+            "h": 240
+        },
+        "camFrame": {
+            "width": 880,
+            "height": 400
+        },
+        "video": {
+            "scale": 0.8
         }
     }
             
